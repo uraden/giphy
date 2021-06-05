@@ -1,0 +1,139 @@
+.Giphy {
+  text-align: center;
+  background-color: black;
+}
+
+
+
+
+
+.frame{
+  border-style: none;
+  width: 400px;
+  height: 300px;
+  background-color: black;
+}
+.frame1 {
+  border-style: none;
+  width: 300px;
+  height: 200px;
+  background-color: black;
+}
+
+
+
+.all_gif{
+  position: relative;
+  top: 50px;
+  background-color: black;
+}
+.alf_gif1{
+ 
+  position: absolute;
+  width: 300px;
+  right: 100px;
+}
+
+.alf_gif2{
+  
+  position: absolute;
+  right: 390px;
+  width: 350px;
+  
+}
+
+.alf-gif3{
+  position: absolute;
+  top: 600px;
+  right: 800px;
+}
+
+.main_frame{
+  position: absolute;
+  top: 700px;
+  right: -560px;
+  border-style: none;
+  height: 600px;
+  width: 600px;
+  border-style: dashed blue;
+  
+}
+
+.main_gif{
+
+  position: absolute;
+  background-color: black;
+
+  top: -600px;
+  left: 100px;
+ 
+}
+
+.input{
+  position: relative;
+  width: 900px;
+  height: 30px;
+  top: 40px;
+}
+  .button{
+    position: absolute;
+    top: 40px;
+    font-size: 20px;
+    font-weight:bold;
+    left: 10px;
+  }
+
+.button{
+  width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+.button:before{
+  content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.button:active {
+  color: #000
+}
+
+.button:active:after {
+  background: transparent;
+}
+
+.button:hover:before {
+  opacity: 1;
+}
+
+.button:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
