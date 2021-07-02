@@ -17,21 +17,17 @@ const [othergif, setOthergif] = useState("")
    
       if (getstate === ""){
        alert("Giphy input must be filled out")
-   return false
+      return false
   }
 
-    Axios.get(`http://api.giphy.com/v1/gifs/search?q=${getstate}&api_key=dc6zaTOxFJmzC`)
+    Axios.get(`https://api.giphy.com/v1/gifs/search?q=${getstate}&api_key=dc6zaTOxFJmzC`)
     .then((inf)=>{
       setState(inf.data.data[1].embed_url)
 
       let alldata = inf.data.data
-      
+
       var result = alldata.map(person => ({ value: person.embed_url}));
-    
-            // var result = arr.map(person => ({ value: person.id, text: person.name }));
-    
-            //console.log(result.map(iimgs =>({values: iimgs.value})))
-     const linksdata = result.map(ll => ll.value)
+      const linksdata = result.map(ll => ll.value)
      
 
      setOthergif(linksdata)
